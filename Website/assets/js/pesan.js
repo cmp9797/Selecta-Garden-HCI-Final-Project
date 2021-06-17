@@ -6,7 +6,7 @@ var month = String(date.getMonth()+1).padStart(2,'0');
 var todaydt = String(date.getDate()).padStart(2,'0');
 var datePattern = year +"-"+ month +"-"+ todaydt;
 document.getElementById('tanggal').min = datePattern;
-document.getElementById('tanggal').value = datePattern;
+// document.getElementById('tanggal').value = datePattern;
 
 
 // 2. increment decrement button
@@ -128,22 +128,22 @@ function myFunction() {
 
     if (!name.checkValidity()) 
     {
-        alert("Nama belum diisi!");
+        alert("Nama lengkap belum anda isi");
         check++;
     } 
     else if (!telpon.checkValidity()) 
     {
-        alert("Nomor telepon belum diisi!");
+        alert("Nomor telepon belum anda isi");
         check++;
     } 
     else if (!email.checkValidity())
     {
-        alert("Email belum diisi!");
+        alert("Email belum anda isi");
         check++;
     } 
     else if (!tgl.checkValidity()) 
     {
-        alert("Tanggal belum diisi!");
+        alert("Tanggal belum anda tentukan");
         check++;
     } 
 
