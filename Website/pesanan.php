@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "rizaltec_selecta";
-$password = "quV2Kze#G3(N";
-$database_name = "rizaltec_selecta";
+$username = "root";
+$password = "";
+$database_name = "db_pesanan";
 
 $conn = mysqli_connect($servername, $username, $password, $database_name);
 
