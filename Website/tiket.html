@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <title>Selecta Garden - Ticket Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/apple-icon.png">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="pesanan.php">
+<!--
+    
+    TemplateMo 561 Purple Buzz
+
+    https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-dark bg-selecta-secondary shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1y-auto m" href="index.html">
+                <span class="text-light h4">Selecta Garden</span>
+            </a>
+            <button class="navbar-toggler border-0 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between mx-5 mt-3 mb-1" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="text-light nav-link rounded-pill px-3" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-light nav-link rounded-pill px-3" href="about.html">Edukasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-light nav-link pinned rounded-pill px-3" href="tiket.html">Pesan Tiket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-light nav-link rounded-pill px-3" href="360.html">View Street</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+    
+
+    <!-- Start Service -->
+    <div class="container-lg py-5">
+        <div class="judulpesantiket  col-md-12 m-auto text-center py-5"  style="display: block;">
+            <h1 class="pricing-header h2 semi-bold-600">Tiket Masuk</h1>
+            <p class="pricing-footer">
+                Selamat datang di halaman pemesanan tiket Selecta Garden. Silahkan pilih tiket yang anda inginkan.
+            </p>
+        </div>
+    </div>
+    <!-- End Service -->
+
+    <!-- Start Pesan Tiket -->
+    <section class="py-0 pt-0 mb-0" id="pesan-top">
+        <form class = "post-user" action="pesanan.php" method="POST"> 
+            <!-- Pemesanan -->
+            <div class="container">
+                <div class="row gy-5 g-lg-5 mb-4">
+
+                    <!-- Data Pribadi -->
+                    <div class="col-md-12 my-5 datapribadi" style="display: block;">
+                        <div class="service-work overflow-hidden card border-0 shadow col-md-12">
+                            
+                            <div class="card-body">
+                                <h3 class="card-title bold-300 px-3 py-2 border-bottom"  style="color: #eb467d;">Data Pribadi</h3>
+                                
+                                <div class="container-fluid">
+                                            
+                                    <div class="service-work overflow-hidden col-12 my-auto">
+                                        <div class="card-body mx-3">
+                                            
+                                            <div class="inputdata col-md-9 mx-auto justify-content-center">
+                                                <div class="d-flex .justify-content-center m-3 mb-5">
+                                                    <label for="example-date-input" class="col-5 col-form-label">Nama Lengkap</label>
+                                                    <div class="col-7">
+                                                        <input name="nama" placeholder="Nama lengkap" class="form-control" type="text" id="nama" value=""  required/>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="inputdata d-flex .justify-content-center m-3 mb-5">
+                                                    <label for="example-date-input" class="telpon col-5 col-form-label">No. Telepon</label>
+                                                    <div class="col-7">
+                                                        <input name="telpon" placeholder="Nomor telepon" class="form-control" type="tel" id="telpon" value="" onkeypress="return event.charCode >= 48 && event.charCode <=57" required/>
+                                                    </div>
+                                                </div>
+
+                                                <div class="inputdata d-flex .justify-content-center m-3">
+                                                    <label for="example-date-input" class="email col-5 col-form-label">Email</label>
+                                                    <div class="col-7">
+                                                        <input name="email" placeholder="Alamat email" class="form-control" type="email" id="email" value="" required/>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Tiket Masuk -->
+                    <div class="col-md-12 my-3 mb-5 tiketutama" style="display: block;">
+                        <div class="service-work overflow-hidden card border-0 shadow col-md-12">
+                            
+                            <div class="card-body">
+                                <h3 class="card-title bold-300 px-3 py-2 border-bottom"  style="color: #eb467d;">Tiket Masuk</h3>
+                                
+                                <div class="container-fluid">
+                                    <div class="row row-flex">
+
+                                        <!-- card info -->
+                                        <div class="col-sm-12 col-lg-6 my-3">
+                                            <div class="service-work overflow-hidden card col-md-12">
+                                                <div class="card-body mx-3">
+                                                    <p class="card-text light-300 text-dark">
+                                                        Jam Buka : 06.00 -17.00 WIB
+                                                    </p>
+                                                    <p class="card-text light-300 text-dark m-0">
+                                                        Tiket masuk sudah termasuk:
+                                                    </p>
+                                                    <div>
+                                                        <div class="row d-column-flex">
+                                                            <div class="col mx-4 mx-4 me-0 pe-0 d-column-flex mt-3">
+                                                                <p class="card-text light-300 text-dark">
+                                                                    <i class='bx-fw bx bxs-check-circle bx-xs' style='color:#9beb34'></i>
+                                                                    Kolam Renang
+                                                                </p>
+                                                                <p class="card-text light-300 text-dark">
+                                                                    <i class='bx-fw bx bxs-check-circle bx-xs' style='color:#9beb34'></i>
+                                                                    Waterpark
+                                                                </p>
+                                                                <p class="card-text light-300 text-dark">
+                                                                    <i class='bx-fw bx bxs-check-circle bx-xs' style='color:#9beb34'></i>
+                                                                    Taman Bunga
+                                                                </p>
+                                                            </div>
+    
+                                                            <div class="col mx-4 ms-0 me-0 p-0 d-column-flex mt-3">
+                                                                <p class="card-text light-300 text-dark">
+                                                                    <i class='bx-fw bx bxs-check-circle bx-xs' style='color:#9beb34'></i>
+                                                                    Taman Dinosaurus
+                                                                </p>
+                                                                <p class="card-text light-300 text-dark">
+                                                                    <i class='bx-fw bx bxs-check-circle bx-xs' style='color:#9beb34'></i>
+                                                                    Akuarium Ikan Raksasa
+                                                                </p>
+                                                                <p class="card-text light-300 text-dark">
+                                                                    <i class='bx-fw bx bxs-check-circle bx-xs' style='color:#9beb34'></i>
+                                                                    Goa Singa
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <h5 class="card-title light-300 text-primary mt-3">IDR 40.000 / orang</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <!-- card info -->
+                                        <div class="col-sm-12 col-lg-6 my-auto">
+                                            <div class="service-work overflow-hidden col-md-12">
+                                                <div class="card-body mx-3">
+                                                    <div class="col-md-8 mx-auto">
+                                                        <div class="d-flex .justify-content-center m-3 mb-5">
+                                                            <label for="example-date-input" class="col-4 col-form-label">Tanggal</label>
+                                                            <div class="col-8">
+                                                                <input name="tanggal" class="form-control text-center" type="date" id="tanggal" value="" min="0" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex .justify-content-center m-3 mb-5">
+                                                            <label for="example-date-input" class="col-4 col-form-label">Jumlah</label>
+                                                            
+                                                            <div class="btn-group jumlah-container col-8" style="margin:5px 0 10px 0;">
+                                                                <input class="harga" value="40000" style="display: none;">
+                                                                <button type="button" class="minus btn bg-selecta-secondary text-light col-4 p-0 pt-1"><i class='bx bx-minus bx-sm my-auto'></i></button>
+                                                                <div class="col-6">
+                                                                    <input type="text" name="utama" class="jumlah form-control rounded-0 text-center" id="utama" value="1" min="1" onkeypress="return event.charCode >= 48 && event.charCode <=57" required/>
+                                                                </div>
+                                                                <button type="button" class="plus btn bg-selecta-secondary text-light col-4 p-0 pt-1"><i class='bx bx-plus bx-sm my-auto'></i></button>                                                                
+                                                                <span id="harga-item" class="harga-item" style="display: none;">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>   
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Tiket Tambahan -->
+                    <div class="col-md-12 my-3 mb-5 tikettambahan" style="display: block;">
+                        <div class="service-work overflow-hidden card border-0 shadow col-md-12">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title bold-300 px-3 py-2 border-bottom" style="color: #eb467d;">Tiket Tambahan</h3>
+                                <div class="container-fluid px-0">
+                                    
+                                    <!-- card info -->
+                                    <div class="card border-0 m-0 my-3 py-0">
+                                        <div class="d-flex flex-wrap justify-content-lg-evenly justify-content-center">
+
+                                            <div class="pricing-list shadow-sm mb-3">
+                                                <h5 class="m-3 mb-1 bor">Sepeda Air</h5>
+                                                <div class="d-flex justify-content-center">
+                                                    <h6 class="light-300 text-primary m-0 mt-1 pt-2 px-1 text-center col-6">IDR 20.000 / 15 menit</h6>
+                                                    <!-- input -->
+                                                    <div class="btn-group jumlah-container col-4" style="margin:5px 0 10px 0;">
+                                                        <input class="harga" value="20000" style="display: none;">
+                                                        <button type="button" class="minus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-minus bx-sm my-auto'></i></button>
+                                                        <div class="col-4">
+                                                            <input type="text" name= "sepeda" class="jumlah form-control rounded-0 text-center" value="0" min="0" onkeypress="return event.charCode >= 48 && event.charCode <=57" required>
+                                                        </div> 
+                                                        <button type="button" class="plus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-plus bx-sm my-auto'></i></button>
+                                                        <span id="harga-item" class="harga-item" style="display: none;">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="pricing-list shadow-sm  mb-3">
+                                                <h5 class="m-3 mb-1 bor">Perahu Ayun</h5>
+                                                <div class="d-flex justify-content-center">
+                                                    <h6 class="light-300 text-primary m-0 mt-1 pt-2 px-3 text-center col-6">IDR 10.000 / orang</h6>
+                                                    <!-- input -->
+                                                    <div class="btn-group jumlah-container col-4" style="margin:5px 0 10px 0;">
+                                                        <input class="harga" value="10000" style="display: none;">
+                                                        <button type="button" class="minus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-minus bx-sm my-auto'></i></button>
+                                                        <div class="col-4">
+                                                            <input type="text" name= "perahu" class="jumlah form-control rounded-0 text-center" value="0" min="0" onkeypress="return event.charCode >= 48 && event.charCode <=57" required>
+                                                        </div> 
+                                                        <button type="button" class="plus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-plus bx-sm my-auto'></i></button>
+                                                        <span id="harga-item" class="harga-item" style="display: none;">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="pricing-list shadow-sm mb-3">
+                                                <h5 class="m-3 mb-1 bor">Arena Berkuda</h5>
+                                                <div class="d-flex justify-content-center">
+                                                    <h6 class="light-300 text-primary m-0 mt-1 pt-2 px-3 text-center col-6">IDR 15.000 / orang</h6>
+                                                    <!-- input -->
+                                                    <div class="btn-group jumlah-container col-4" style="margin:5px 0 10px 0;">
+                                                        <input class="harga" value="15000" style="display: none;">  
+                                                        <button type="button" class="minus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-minus bx-sm my-auto'></i></button>
+                                                        <div class="col-4">
+                                                            <input type="text" name= "berkuda" class="jumlah form-control rounded-0 text-center" value="0" min="0" onkeypress="return event.charCode >= 48 && event.charCode <=57" required>
+                                                        </div> 
+                                                        <button type="button" class="plus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-plus bx-sm my-auto'></i></button>
+                                                        <span id="harga-item" class="harga-item" style="display: none;">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="pricing-list shadow-sm mb-3">
+                                                <h5 class="m-3 mb-1 bor">Flying Fox</h5>
+                                                <div class="d-flex justify-content-center">
+                                                    <h6 class="light-300 text-primary m-0 mt-1 pt-2 px-3 text-center col-6">IDR 25.000 / orang</h6>
+                                                    <!-- input -->
+                                                    <div class="btn-group jumlah-container col-4" style="margin:5px 0 10px 0;">
+                                                        <input class="harga" value="25000" style="display: none;">
+                                                        <button type="button" class="minus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-minus bx-sm my-auto'></i></button>
+                                                        <div class="col-4">
+                                                            <input type="text" name= "flyingfox" class="jumlah form-control rounded-0 text-center" value="0" min="0" onkeypress="return event.charCode >= 48 && event.charCode <=57" required>
+                                                        </div> 
+                                                        <button type="button" class="plus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-plus bx-sm my-auto'></i></button>
+                                                        <span id="harga-item" class="harga-item" style="display: none;">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pricing-list shadow-sm mb-3">
+                                                <h5 class="m-3 mb-1 bor">Sky Bike</h5>
+                                                <div class="d-flex justify-content-center">
+                                                    <h6 class="light-300 text-primary m-0 mt-1 pt-2 px-3 text-center col-6">IDR 20.000 / orang</h6>
+                                                    <!-- input -->
+                                                    <div class="btn-group jumlah-container col-4" style="margin:5px 0 10px 0;">
+                                                        <input class="harga" value="20000" style="display: none;">
+                                                        <button type="button" class="minus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-minus bx-sm my-auto'></i></button>
+                                                        <div class="col-4">
+                                                            <input type="text" name= "skybike" class="jumlah form-control rounded-0 text-center" value="0" min="0" onkeypress="return event.charCode >= 48 && event.charCode <=57" required>
+                                                        </div> 
+                                                        <button type="button" class="plus btn bg-selecta-secondary text-light p-0 pt-1"><i class='bx bx-plus bx-sm my-auto'></i></button>
+                                                        <span id="harga-item" class="harga-item" style="display: none;">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+                    <div class="text-center mx-auto my-5 pb-4 align-items-center selanjutnya-container">
+                        <!-- <input type="button" name="selanjutnya" id="selanjutnya" value="Selanjutnya" class="selanjutnya btn rounded-pill px-5 py-2 btn-success text-light semi-bold-600" onclick="myFunction()"/> -->
+                        <a href="#pesan-top" class="selanjutnya btn rounded-pill px-5 py-2 btn-success text-light semi-bold-600" onclick="myFunction()"><h4 class="m-0">Selanjutnya</h4></a>
+                    </div>
+
+                    <!-- Konfirmasi -->
+                    <div class="konfirmasi col-md-12 my-3 mt-5" style="display: none;">
+                        <div class="service-work overflow-hidden card border-0 shadow col-md-12">
+
+                            <div class="card-body">
+                                <!-- Judul -->
+                                <div class="mt-0 mx-5 pt-4 pricing-list-icon justify-content-around text-center align-items-center text-secondary">
+                                    <h3 class="semi-bold-600 mx-5 mb-0 text-success">Konfirmasi Pembayaran</h3>
+                                    <div class="d-flex flex-wrap justify-content-center">
+                                        <div class="pricing-list-icon text-left text-secondary py-2">
+                                            <p class="semi-bold-600 mt-0 mb-0 me-3">Untuk Tanggal</p>
+                                        </div>
+                
+                                        <div class="pricing-list-body text-center align-items-center pl-3 py-2">
+                                            <p class="semi-bold-600 mt-0 mb-0" id="tanggal-pesan"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- List pesanan -->
+                                <div class="list-pesanan mx-5 py-3 pt-4 border-bottom">
+                                    <div class="mx-5 justify-content-center">
+                                        
+                                        <!-- Data diri -->
+                                        <div class="data-pribadi d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                            <div class="pricing-list-icon text-left col-4 ps-md-5 text-secondary py-2">
+                                                <p class="light-600 mt-0 mb-0 ms-md-4">Nama Lengkap</p>
+                                            </div>
+                
+                                            <div class="pricing-list-body col-8 py-2 pe-md-5 text-left">
+                                                <p class="light-600 mt-0 mb-0 me-md-5"> :&nbsp;<span id="data_nama" class="data_nama ps-md-3"></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="data-pribadi d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                            <div class="pricing-list-icon text-left col-4 ps-md-5 text-secondary py-2">
+                                                <p class="light-600 mt-0 mb-0 ms-md-4">Nomor Telp</p>
+                                            </div>
+                
+                                            <div class="pricing-list-body col-8 py-2 pe-md-5 text-left">
+                                                <p class="light-600 mt-0 mb-0 me-md-5"> :&nbsp;<span id="data_telpon" class="data_telpon ps-md-3"></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="data-pribadi d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                            <div class="pricing-list-icon text-left col-4 ps-md-5 text-secondary py-2">
+                                                <p class="light-600 mt-0 mb-0 ms-md-4">Alamat Email</p>
+                                            </div>
+                
+                                            <div class="pricing-list-body col-8 py-2 pe-md-5 text-left">
+                                                <p class="light-600 mt-0 mb-0 me-md-5"> :&nbsp;<span id="data_email" class="data_email ps-md-3"></span></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- List pesanan -->
+                                        <div class="justify-content-lg-evenly justify-content-around pe-md-1">
+                                            <div class="pricing-list-icon text-left col-12 ps-md-5 text-secondary py-2">
+                                                <p class="semi-bold-600 mt-4 mb-0 ms-md-4">List Pesanan:</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Tiket masuk -->
+                                        <div class="pesanan-container d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                            <div class="pricing-list-icon text-left col-6 ps-md-5 text-secondary py-2">
+                                                <p class="light-600 mt-0 mb-0 ms-md-5">Tiket utama</p>
+                                            </div>
+                
+                                            <div class="pricing-list-body col-6 py-2 pe-md-5 text-end">
+                                                <p class="light-600 mt-0 mb-0 me-md-5">IDR <span id="harga-pesan" class="harga-pesan"></span></p>
+                                            </div>
+                                        </div>
+                
+                                        <!-- Tiket tambahan -->
+                                        <div class="pesanan-container" style="display: none;">
+                                            <div class="d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                                <div class="pricing-list-icon text-left col-6 ps-md-5 text-secondary py-2">
+                                                    <p class="light-600 mt-0 mb-0 ms-md-5">Sepeda Air</p>
+                                                </div>
+                    
+                                                <div class="pricing-list-body col-6 py-2 pe-md-5 text-end">
+                                                    <p class="light-600 mt-0 mb-0 me-md-5">IDR <span id="harga-pesan" class="harga-pesan"></span></p>
+                                                </div>
+                                            </div>    
+                                        </div>
+
+                                        <div class="pesanan-container" style="display: none;">
+                                            <div class="d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                                <div class="pricing-list-icon text-left col-6 ps-md-5 text-secondary py-2">
+                                                    <p class="light-600 mt-0 mb-0 ms-md-5">Perahu Ayun</p>
+                                                </div>
+                    
+                                                <div class="pricing-list-body col-6 py-2 pe-md-5 text-end">
+                                                    <p class="light-600 mt-0 mb-0 me-md-5">IDR <span id="harga-pesan" class="harga-pesan"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pesanan-container" style="display: none;">
+                                            <div class="d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                                <div class="pricing-list-icon text-left col-6 ps-md-5 text-secondary py-2">
+                                                    <p class="light-600 mt-0 mb-0 ms-md-5">Arena Berkuda</p>
+                                                </div>
+                    
+                                                <div class="pricing-list-body col-6 py-2 pe-md-5 text-end">
+                                                    <p class="light-600 mt-0 mb-0 me-md-5">IDR <span id="harga-pesan" class="harga-pesan"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pesanan-container" style="display: none;">
+                                            <div class="d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                                <div class="pricing-list-icon text-left col-6 ps-md-5 text-secondary py-2">
+                                                    <p class="light-600 mt-0 mb-0 ms-md-5">Flying Fox</p>
+                                                </div>
+                    
+                                                <div class="pricing-list-body col-6 py-2 pe-md-5 text-end">
+                                                    <p class="light-600 mt-0 mb-0 me-md-5">IDR <span id="harga-pesan" class="harga-pesan"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pesanan-container" style="display: none;">
+                                            <div class="d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1">
+                                                <div class="pricing-list-icon text-left col-6 ps-md-5 text-secondary py-2">
+                                                    <p class="light-600 mt-0 mb-0 ms-md-5">Sky Bike</p>
+                                                </div>
+                    
+                                                <div class="pricing-list-body col-6 py-2 pe-md-5 text-end">
+                                                    <p class="light-600 mt-0 mb-0 me-md-5">IDR <span id="harga-pesan" class="harga-pesan"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                    
+                                <div class="pembayaran pricing-list mx-5 my-3">
+                                    <div class="d-flex flex-wrap justify-content-lg-evenly justify-content-around pe-md-1 mx-5">
+                                        <div class="pricing-list-icon text-left col-6 ps-md-5 text-secondary py-2">
+                                            <p class="semi-bold-600 mt-0 mb-0 ms-md-5">Total Harga</p>
+                                        </div>
+            
+                                        <div class="pricing-list-body col-6 py-2 pe-md-5 text-end">
+                                            <p class="semi-bold-600 mt-0 mb-0 me-md-5">IDR <span id="tot-bayar" class="tot-bayar">0</span></p>
+                                        </div>
+                                    </div>
+                                </div>   
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- Pesan -->
+                    <div class="button-pesan-container" style="display: none;">
+                        <div class="button-pesan text-center m-auto my-5 align-items-center d-flex flex-wrap justify-content-around"> 
+                            <input type="button" id="kembali" name="kembali" value="KEMBALI" class="btn rounded-pill col-4 px-5 py-2 ms-5 text-light semi-bold-600 bg-selecta" style="font-size: larger;" onclick="kembalipesan()"/>
+                            <input type="submit" id="pesan" name="pesan" value="PESAN" class="btn rounded-pill col-4 px-5 py-2 me-5 text-light semi-bold-600 bg-success" style="font-size: larger;" onclick="postNewUser()"/>
+                        </div>
+                    </div>
+                    
+  
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- End Pesan Tiket -->
+
+
+    
+    <!-- Start Footer -->
+    <footer class="pt-4" style="background-color: #dfa1b5;">
+        <div class="container">
+            <div class="row py-4 justify-content-lg-between">
+
+                <div class="col-lg-3 col-12 my-auto align-left mb-1">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="text-dark h5">Selecta Garden</span>
+                    </a>
+                    <p class="text-dark my-lg-4 my-2">
+                        Kunjungi wisata kami di jalan raya Selecta no 1 Desa Tulungrejo, Kecamatan Bumiaji, Kota Batu, Jawa Timur
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-auto mt-4">
+                    <span class="text-dark h5">Hubungi Kami</span>
+                    <ul class="list-unstyled text-dark light-300 m-0">
+                        <li class="py-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-dark py-1" href="tel:0341-591-025">(0341) 591 025</a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.facebook.com/Taman-wisata-selecta-malang-batu-100194908164579/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.instagram.com/tamanrekreasiselecta/">
+                                <i class='bx bxl-instagram bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-flickr-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.medium.com/">
+                                <i class='bx bxl-medium-square bx-md' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 py-3 bg-selecta">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            Copyright © 2021- Wisata Selecta Garden Malang. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/pesan.js"></script>
+</body>
+
+</html>

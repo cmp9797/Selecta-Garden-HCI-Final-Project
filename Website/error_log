@@ -1,0 +1,22 @@
+[16-Jun-2021 16:38:40 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 8
+[16-Jun-2021 16:38:44 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 8
+[16-Jun-2021 16:38:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 8
+[16-Jun-2021 16:39:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 8
+[16-Jun-2021 16:39:13 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 8
+[16-Jun-2021 16:39:13 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 29
+[16-Jun-2021 16:39:13 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 33
+[16-Jun-2021 16:39:13 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 35
+[16-Jun-2021 16:39:14 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 8
+[16-Jun-2021 16:39:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 29
+[16-Jun-2021 16:39:14 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 33
+[16-Jun-2021 16:39:14 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 35
+[16-Jun-2021 16:39:28 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 8
+[16-Jun-2021 16:40:35 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 8
+[16-Jun-2021 16:40:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 29
+[16-Jun-2021 16:40:35 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 33
+[16-Jun-2021 16:40:35 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 35
+[16-Jun-2021 18:23:30 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 7
+[16-Jun-2021 18:23:33 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 7
+[16-Jun-2021 18:23:50 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 7
+[16-Jun-2021 18:28:36 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 7
+[16-Jun-2021 18:29:03 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/rizaltec/datasewa/selectagarden.rizaltech.id/Website/pesanan.php on line 7

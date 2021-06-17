@@ -1,0 +1,240 @@
+/*
+Custom CSS for TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+*/
+body {
+    background-color: rgb(248,248,248);
+}
+
+.bg-selecta {
+    background-color: rgba(160,44,93,1);
+}
+
+.bg-selecta-secondary {
+    background-color: #b3567d;
+}
+
+.text-selecta {
+    color: #ffffff;
+}
+
+.text-selecta-red {
+    color: #b3567d;
+}
+.text-selecta-red:hover {
+    color: rgba(160,44,93,1);
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(160,44,93,1);
+}
+
+.navbar .nav-link:active {
+    color: #fff;
+    background-color: rgba(160,44,93,1);
+    box-shadow: inset 5px 5px 3px rgb(51, 50, 50, 20%), 
+        inset -2px -2px 4px rgb(51, 50, 50, 20%);
+}
+
+.pinned {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: rgba(160,44,93,1);
+    box-shadow: inset 5px 5px 3px rgb(51, 50, 50, 20%), 
+        inset -2px -2px 4px rgb(51, 50, 50, 20%);
+}
+
+.show .pinned {
+    box-shadow: none;
+    background-color: rgba(160,44,93,1);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator { 
+    /* display: none; */
+    /* -webkit-appearance: none; */
+    width: 20px;
+    padding: 0px;
+    margin: 5px 1px;
+    margin-left: 3px;
+}
+
+/* Home */
+.text-secondary {
+    color: #262949!important;
+    text-align: left;
+}
+
+/* line 261, src/assets/scss/_reboot.scss */
+a {
+    color: #262949;
+    text-decoration: underline;
+}
+  
+  /* line 265, src/assets/scss/_reboot.scss */
+a:hover {
+    color: #262949;
+}
+
+/* line 65, src/assets/scss/_buttons.scss */
+.btn-outline-primary {
+    color: #262949; 
+    border-color: #262949;
+}
+
+/* line 50, src/assets/scss/mixins/_utilities.scss */
+.bg-secondary {
+    background-color: #262949 !important;
+}
+
+/* line 59, src/assets/scss/_buttons.scss */
+.btn-primary {
+    color: #f6f9fe;
+    background-color: #a02c5d;
+    border-color: #a02c5d;
+  }
+  
+  /* line 25, src/assets/scss/mixins/_buttons.scss */
+  .btn-primary:hover {
+    color: #f6f9fe;
+    background-color: #b81458;
+    border-color: #b81458;
+  }
+
+  .btn-outline-primary:hover {
+    color: #f6f9fe;
+    background-color: #2d2f43;
+    border-color: #2d2f43;
+  }
+  
+.banner-body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1.2rem;
+    font-weight: 489;
+    line-height: 1.5;
+    color: #262949;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+.overly {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -53px;
+    background-image: linear-gradient(to bottom, transparent, black);
+    padding: 29px 15px 10px;
+    transition: 0.5s;
+}
+
+button{
+    cursor : pointer;
+}
+
+
+
+/* Home - Facilities */
+.facilities .nav-link {
+    color: rgba(160,44,93,1);
+    /* background-color: rgba(160,44,93,1); */
+}
+
+.facilities .nav-link:hover {
+    color: #fff;
+    background-color: rgba(160,44,93,0.9);
+}
+.facilities .nav-link.active {
+    color: #fff;
+    background-color: rgba(160,44,93,1);
+}
+
+
+/* Edukasi */
+.col-lg-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+}
+
+.col-lg-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 80%;
+}
+
+.embedded-video-large{
+    background-color:#000;
+    background-position:center;
+    background-size:cover;
+    cursor:pointer;
+    display:inline-block; 
+    width: 400px; 
+    height: 230px; 
+    max-width:100%;
+    overflow:hidden;
+    position:relative
+}
+
+.videoyoutube{
+    text-align:center;
+    margin:20px auto;
+    width:100%;
+}
+
+.video-responsive{
+    position:relative;
+    padding-bottom:56.25%;
+    overflow:hidden;
+    margin:8px
+}
+.video-responsive iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:0
+}
+
+@media screen and (max-width:700px){
+    .videoyoutube{width:100%}
+}
+
+/* Tiket */
+
+/* tiket- modal */
+.bg-modal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+.close {
+    top: 0;
+    font-size: 42px;
+    cursor: pointer;
+    color: grey;
+}
+
+.close:hover {
+    color: black;
+}
+
