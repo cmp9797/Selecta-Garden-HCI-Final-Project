@@ -7,13 +7,7 @@ var todaydt = String(date.getDate()).padStart(2,'0');
 var datePattern = year +"-"+ month +"-"+ todaydt;
 document.getElementById('tanggal').min = datePattern;
 document.getElementById('tanggal').value = datePattern;
-// print tanggal konfirmasi
-let newSelectedDate; // undefined
-// document.getElementById("tanggal").addEventListener("change", function() {
-    // newSelectedDate = this.value; // Update newSelectedDate value.
-    // console.log(newSelectedDate) // Now has a string.
-    // document.getElementById('tanggal-pesan').innerHTML = newSelectedDate;
-// });
+
 
 // 2. increment decrement button
 var inc;
@@ -38,7 +32,9 @@ var inc = plusbtn.click( function() {
         .find(".jumlah");
     var Qtyval = Number($n.val());
     $n.val(Qtyval+1);
-    // console.log($n.val()); //debug
+    
+    // DEBUG
+    // console.log($n.val()); 
 
     // var $hi = $(this)
     //     .parent(".jumlah-container")
@@ -50,12 +46,12 @@ var inc = plusbtn.click( function() {
 
     // $n.val( Number($n.val()+1) );
     // console.log($n.val(Number($n.val())));
-    // update_jumlah();
 });
 
 
 //3 Update jumlah
 function update_jumlah() {
+
     //print jml biaya
     var bayar = 0.0;
     let index = 0;
@@ -66,27 +62,34 @@ function update_jumlah() {
         bayar += tot_harga;
         
         //total per tiket
-        // var child = $(this);
-        // var pesanitem = Array.from($(this).parent.children).indexOf($(this));
         let $pesanan = $('.list-pesanan').find('.pesanan-container').eq(index);
+        
+        // DEBUG
         // $pesanan.eq(1).find('.harga-pesan').text(tot_harga);
         // console.log($pesanan);
         // console.log($pesanan.find('.harga-pesan'));
-        console.log(tot_harga);
+        // console.log(tot_harga);
+
         if(tot_harga == 0)
         {
             $pesanan.css("display", "none");
+
+            // DEBUG
             // console.log($pesanan);
             // $pesanan.find('.harga-pesan').text('0');
         }
         else{
-            // $pesanan.addClass("d-flex flex-wrap");
             $pesanan.css("display", "block");
             $pesanan.find('.harga-pesan').text(tot_harga);
+
+            //DEBUG
             // console.log(pesanitem); 
             // console.log(tot_harga); //debug 
         }
+
         index += 1;
+
+        //DEBUG
         // $(this).find('.harga-item').text(tot_harga);
     });
 
@@ -95,12 +98,6 @@ function update_jumlah() {
 }
 
 function data_pribadi() {
-
-//     var newSelectedDate = document.getElementById("tanggal").value;
-//     // console.log(newSelectedDate);
-// document.getElementById('tanggal-pesan').innerHTML = newSelectedDate;
-
-    // let data = $('.nama-user');
     let namauser = document.getElementById("nama").value;
     let telponuser = document.getElementById("telpon").value;
     let emailuser = document.getElementById("email").value;
@@ -109,18 +106,14 @@ function data_pribadi() {
     document.querySelector('.data_telpon').innerHTML = telponuser;
     document.querySelector('.data_email').innerHTML = emailuser;
 
-    console.log(namauser);
-    console.log(telponuser);
-    console.log(emailuser);
-    console.log('uye');
-    console.log(document.getElementsByClassName('.data_nama').innerHTML);
-    console.log(document.getElementsByClassName('.data_email').innerHTML);
-    console.log(document.getElementsByClassName('.data_telpon').innerHTML);
-
-    // let $tulisdata = $('.data_pribadi');
-    // $tulisdata.find('.data_nama').text(namauser);
-    // $tulisdata.find('.data_email').text(telponuser);
-    // $tulisdata.find('.data_telpon').text(emailuser);
+    // DEBUG
+    // console.log(namauser);
+    // console.log(telponuser);
+    // console.log(emailuser);
+    // console.log('---');
+    // console.log(document.getElementsByClassName('.data_nama').innerHTML);
+    // console.log(document.getElementsByClassName('.data_email').innerHTML);
+    // console.log(document.getElementsByClassName('.data_telpon').innerHTML);
 }
 
 
@@ -133,22 +126,25 @@ function myFunction() {
 
     let check = 0;
 
-    if (!name.checkValidity()) {
+    if (!name.checkValidity()) 
+    {
         alert("Nama belum diisi!");
         check++;
-        // document.getElementById("demo").innerHTML = inpObj.validationMessage;
-    } else if (!telpon.checkValidity()) {
+    } 
+    else if (!telpon.checkValidity()) 
+    {
         alert("Nomor telepon belum diisi!");
         check++;
-        // document.getElementById("demo").innerHTML = inpObj.validationMessage;
-    } else if (!email.checkValidity()) {
+    } 
+    else if (!email.checkValidity())
+    {
         alert("Email belum diisi!");
         check++;
-        // document.getElementById("demo").innerHTML = inpObj.validationMessage;
-    } else if (!tgl.checkValidity()) {
+    } 
+    else if (!tgl.checkValidity()) 
+    {
         alert("Tanggal belum diisi!");
         check++;
-        // document.getElementById("demo").innerHTML = inpObj.validationMessage;
     } 
 
     if(check == 0)
@@ -169,12 +165,15 @@ function confirm() {
     document.querySelector('.tikettambahan').style.display = 'none';
     
     //tanggal
-    var newSelectedDate = document.getElementById("tanggal").value;
-        // console.log(newSelectedDate);
+    // print tanggal konfirmasi
+    let newSelectedDate = document.getElementById("tanggal").value;
     document.getElementById('tanggal-pesan').innerHTML = newSelectedDate;
+    // DEBUG
+    // console.log(newSelectedDate);
 
     //data diri
     data_pribadi();
+
     //list pesanan
     update_jumlah();
 }
