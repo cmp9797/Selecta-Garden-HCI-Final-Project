@@ -147,11 +147,13 @@ function myFunction() {
         alert("Tanggal belum anda tentukan");
         check++;
     } 
-    else if (!utama.checkValidity()) 
+    else if (utama.value == 0) 
     {
+
         alert("Minimal memesan 1 tiket masuk");
         check++;
     } 
+    
     if(check == 0)
     {
         confirm();
