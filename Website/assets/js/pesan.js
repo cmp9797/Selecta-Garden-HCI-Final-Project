@@ -123,6 +123,7 @@ function myFunction() {
     let telpon = document.getElementById("telpon");
     let email = document.getElementById("email");
     let tgl = document.getElementById("tanggal");
+    let utama = document.getElementById("utama");
 
     let check = 0;
 
@@ -146,7 +147,11 @@ function myFunction() {
         alert("Tanggal belum anda tentukan");
         check++;
     } 
-
+    else if (!utama.checkValidity()) 
+    {
+        alert("Minimal memesan 1 tiket masuk");
+        check++;
+    } 
     if(check == 0)
     {
         confirm();
