@@ -101,13 +101,13 @@ function data_pribadi() {
 // document.getElementById('tanggal-pesan').innerHTML = newSelectedDate;
 
     // let data = $('.nama-user');
-    let namauser = document.getElementById("tanggal").value;
+    let namauser = document.getElementById("nama").value;
     let telponuser = document.getElementById("telpon").value;
     let emailuser = document.getElementById("email").value;
 
     document.querySelector('.data_nama').innerHTML = namauser;
-    document.querySelector('.data_email').innerHTML = telponuser;
-    document.querySelector('.data_telpon').innerHTML = emailuser;
+    document.querySelector('.data_telpon').innerHTML = telponuser;
+    document.querySelector('.data_email').innerHTML = emailuser;
 
     console.log(namauser);
     console.log(telponuser);
