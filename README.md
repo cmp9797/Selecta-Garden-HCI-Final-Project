@@ -11,11 +11,11 @@ Berikut beberapa preview tampilan website kami :
 
 ![image](https://user-images.githubusercontent.com/76908532/122395972-ba775880-cfa1-11eb-9f83-8c5e6c88d76b.png)
 
-4. Pada Menu Pesan Tiket
+3. Pada Menu Pesan Tiket
 
 ![image](https://user-images.githubusercontent.com/76908532/122396023-c6631a80-cfa1-11eb-821d-0af1f6ad6847.png)
 
-6. Pada menu 360 Street View
+4. Pada menu 360 Street View
 
 ![image](https://user-images.githubusercontent.com/76908532/122396067-d418a000-cfa1-11eb-880f-1d8d06f5732c.png)
 
